@@ -1,0 +1,10 @@
+package com.app.custom_excs;
+
+public class CustomerNotFoundException extends RuntimeException {
+
+	private static final long serialVersionUID = 1L;
+
+	public CustomerNotFoundException(String mesg) {
+		super(mesg);
+	}
+}

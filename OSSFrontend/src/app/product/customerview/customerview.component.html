@@ -1,0 +1,28 @@
+<br>
+<div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let p of products">
+        <div class="card" style="width: 15rem; height: 450px; margin-bottom: 30px;">
+          <img src="../../../assets/images/badmintoncard1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ">{{p.name}}</h3>
+            <!-- <p class="card-text">{{p.description}}</p> -->
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Product Id : {{p.id}}</li>
+            <li class="list-group-item">Price : {{p.unitPrice}}</li>
+          </ul>
+          <div class="card-body">
+            <button type="button" class="btn btn-success mr-2" [routerLink]="['/viewproduct',p.id]">View</button>
+            <button type="button" class="btn btn-primary" (click)="AddToCart(p.id)">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-primary" [routerLink]="['/viewcart']">View Cart</button>
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-danger" [routerLink]="['/home']">Logout</button>
+      </div>
+    </div>
+</div>

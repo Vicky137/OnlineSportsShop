@@ -1,0 +1,33 @@
+<div class="container">
+    <h2>List Of Customer</h2>
+    <p>List of all customers  available</p>            
+    <table class="table table-hover" >
+      <thead>
+        <tr>
+          <th >Id</th>
+          <th >Name</th>
+          <th >Email</th>
+          
+          <th >Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of _customerslist">
+          <td >{{customer.id}}</td>
+          <td >{{customer.name}}</td>
+          <td >{{customer.email}}</td>
+         
+          
+          <td>
+               
+               <button type="button" class="btn btn-info" (click)="goToViewCustomer(customer.id)">View</button>&nbsp;&nbsp;
+               <button type="button" class="btn btn-danger" (click)="deleteCustomer(customer.id)">Delete</button>
+        </td>
+        </tr>
+       
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-danger" (click)="gotolist()">Back</button>
+   
+  </div>
+  

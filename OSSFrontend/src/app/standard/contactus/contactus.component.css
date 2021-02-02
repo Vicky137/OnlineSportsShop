@@ -1,0 +1,12 @@
+#contact .card:hover i,#contact .card:hover h4{
+	color: #39a1d1;
+}
+
+#para{
+    font-style: italic;
+    font-size: large;
+}
+/* #contact{
+  
+        background-image: url('../../../assets/images/c.jpg');
+} */

@@ -1,0 +1,33 @@
+<div class="container" style="width: 75%;">
+    <div class="row">
+        <div class="col-md-12">
+            <div >
+                <div >
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <!-- <th>Product Id</th> -->
+                            <th>Product Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </thead>
+                        <tbody *ngFor="let obj of cartArray | keyvalue">
+                            <tr *ngFor="let item of obj.value">
+                                <!-- <td>{{item.id}}</td> -->
+                                <td>{{item.name}}</td>
+                                <td>{{item.description}}</td>
+                                <td>{{item.unitPrice}}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <button type="button" class="btn btn-primary" [routerLink]="['/thankyou']">Proceed to Payment</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

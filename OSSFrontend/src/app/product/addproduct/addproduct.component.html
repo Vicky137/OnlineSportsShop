@@ -1,0 +1,42 @@
+<div class="container">
+    <h2>Add New Product Details</h2>
+    <form #addproductform="ngForm"(ngSubmit)="addProductFormSubmit()">
+     
+      <!-- <div class="form-group">
+         <label for="productID">ID:</label>
+        <input type="number" class="form-control" required [(ngModel)]="product.productID" name="productID">
+      </div> -->
+      <div class="form-group">
+        <label for="productName">Name:</label>
+        <input type="text" class="form-control" required [(ngModel)]="product.name" name="productName">
+      </div>
+      <div class="form-group">
+        <label for="Description">Description</label>
+        <input type="text" class="form-control" required [(ngModel)]="product.description" name="Description">
+      </div>
+      <div class="form-group">
+        <label for="unitPrice">Price</label>
+        <input type="number" class="form-control" required [(ngModel)]="product.unitPrice" name="unitPrice">
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="number" class="form-control" required [(ngModel)]="product.quantity" name="quantity">
+      </div>
+      <div class="form-group">
+        <label for="imageUrl">ImageURL</label>
+        <input type="text" class="form-control" required [(ngModel)]="product.imageUrl" name="imageUrl">
+      </div>
+      <div class="form-group">
+        <label for="CategoryId">CategoryId</label>
+        <input type="text" class="form-control" required [(ngModel)]="product.categoryId" name="catid">
+      </div>
+      <div class="form-group">
+        <label for="vendorId">VendorId:</label>
+        <input type="number" class="form-control" required [(ngModel)]="product.vendorId" name="venid">
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>&nbsp;&nbsp;
+      <button type="submit" class="btn btn-primary" (click)="gotolist()">Back</button>
+    </form>
+  </div>
+  
+    

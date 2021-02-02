@@ -1,0 +1,38 @@
+<div class="container">
+    <h2>List Of Products</h2>
+    <p>List of all sports equipments available in stock</p>            
+    <table class="table table-hover" >
+      <thead>
+        <tr>
+          <th >Id</th>
+          <th >Name</th>
+          
+          <th >Price</th>
+          <th> Quantity</th>
+          <!-- <th>Product Quantity</th>
+          <th>Product Description</th> -->
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of _productslist">
+          <td >{{product.id}}</td>
+          <td >{{product.name}}</td>
+     
+          <td >{{product.unitPrice}}</td>
+          <td >{{product.quantity}}</td>
+          <!-- <td>{{product.Qunatity}}</td>
+          <td>{{product.Description}}</td> -->
+          <td>
+               <button type="button" class="btn btn-primary"  (click)="goToEditProduct(product.id)">Edit</button>&nbsp;&nbsp;
+               <button type="button" class="btn btn-info" (click)="goToViewProduct(product.id)">View</button>&nbsp;&nbsp;
+               <button type="button" class="btn btn-danger" (click)="deleteProduct(product.id)">Delete</button>
+        </td>
+        </tr>
+       
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-success" (click)="goToAddProduct()">Add New Product</button>&nbsp;&nbsp; 
+    <button type="button" class="btn btn-danger" (click)="gotolist()">Back</button>
+  </div>
+  

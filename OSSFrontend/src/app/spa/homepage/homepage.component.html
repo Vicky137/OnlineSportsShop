@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<mat-toolbar  class="mat-elevation-z6" >
+    <!-- <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a href="#" class="navbar-brand">
+            <img src="../../../assets/images/finallogo.png" height="28" alt="SquareBall">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav> -->
+    <span>SquareBall</span>
+  
+    <div class="spacer">
+    
+        <button style="margin-left:100%;" mat-icon-button color="primary" class="example-icon favorite-icon" routerLink="home" aria-label="Example icon-button with heart icon">
+            <mat-icon>house</mat-icon>
+          </button>    
+   
+    
+    <a mat-button color="primary" routerLink="aboutus">AboutUs</a>
+    <a mat-button color="primary" routerLink="contactus">ContactUs</a>
+    <a mat-button color="primary"  routerLink="customerview">Catlog</a>
+    <a mat-button color="primary"  routerLink="viewcart">Cart</a>
+    
+    <a mat-button color="primary"  routerLink="adminlogin"><i class="fas fa-user"></i> Admin</a>
+    <a mat-button color="primary"  routerLink="vendorlogin"><i class="fas fa-user"></i> Vendor</a>
+    <button mat-flat-button class="login-button" color="primary" routerLink="customerlogin"><i class="fas fa-sign-in-alt mr-2"></i>Login/Register</button>
+    
+
+
+</div>
+</mat-toolbar>
+<router-outlet></router-outlet>
+
+
